@@ -1,0 +1,46 @@
+# ==============================================================================
+# GITIGNORE: Valuador Inteligente de Inmuebles Bogotá & Sabana
+# Aislamiento de datos sensibles, archivos pesados y material académico
+# ==============================================================================
+
+# Entornos virtuales locales
+.venv/
+venv/
+env/
+ENV/
+
+# Caché de Python y frameworks de testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/
+
+# Datos transaccionales sensibles y datasets crudos (Cero fuga de información)
+*.parquet
+*.csv
+inmuebles_deflactados.parquet
+df_matriz_documental.csv
+
+# Archivos pickle obsoletos o no reproducibles (Sustituidos por formato nativo JSON en models/)
+*.pkl
+
+# Documentos académicos, tesis y planeación interna
+*.pdf
+Notebook_Documental.ipynb
+PLAN_DE_DESPLIEGUE.md
+
+# Gráficas, imágenes EDA y figuras de tesis
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Archivos de entorno, SO y editores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
